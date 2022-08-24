@@ -1,0 +1,22 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "DSA Practice",
+  "main": "function.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harsh-developer/DSA.git"
+  },
+  "author": "harsh-developer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harsh-developer/DSA/issues"
+  },
+  "homepage": "https://github.com/harsh-developer/DSA#readme",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
