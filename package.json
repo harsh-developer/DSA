@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/harsh-developer/DSA#readme",
   "dependencies": {
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "prompt-sync": "^4.2.0"
   }
 }
