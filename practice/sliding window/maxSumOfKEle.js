@@ -25,7 +25,7 @@ for(let i = 0; i<k; i++){
     currWinSum += arr[i];
     maxSum = currWinSum;
 }
-for(let i = k; i<arr.length; i++){
+for(let i = k; i < arr.length; i++){
     currWinSum += arr[i] - arr[i - k];
     if(currWinSum > maxSum){
         maxSum = currWinSum;
