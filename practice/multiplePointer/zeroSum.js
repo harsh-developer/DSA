@@ -1,14 +1,14 @@
-// In a sorted array find the pair which has sum 0
+// In a sorted array find the pair which sums to 0
 
-let arr = [-5, -3, -2, 1, 5, 7];
+let arr = [-10, -8, -7, -4, 0, 2, 3, 5, 7, 11, 12, 15];
 let start = 0;
 let end = arr.length - 1
 while(start < end){
-    if(arr[start] + arr[end] < 0){
-        start++
-    }
     if(arr[start] + arr[end] > 0){
         end--
+    }
+    if(arr[start] + arr[end] < 0){
+        start++
     }
     if(arr[start] + arr[end] == 0){
         console.log(arr[start], arr[end]);
