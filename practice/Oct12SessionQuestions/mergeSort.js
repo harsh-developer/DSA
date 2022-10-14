@@ -3,13 +3,13 @@
 function mergeSort(array, start, end) {
     // base case
     if (start >= end) {
-        return;
+        return array;
     }
     let mid = Math.floor(start + (end - start) / 2);
     // divide and conquer method
     mergeSort(array, start, mid);
     mergeSort(array, mid + 1, end);
-    merge(array, start, mid, end);
+    return merge(array, start, mid, end);
 }
 
 function merge(array, start, mid, end) {
@@ -51,9 +51,10 @@ function merge(array, start, mid, end) {
         b++
         c++
     }
+    return array;
 }
 
-let arr = [3, 2, 12, -7, 13, 33, 17, 99, 65]
+let arr = [3, 2, 12, -7, 13, -5, 33, 17, 99, 65]
 let start = 0;
-let end = arr.length;
+let end = arr.length - 1;
 console.log(mergeSort(arr, start, end))
