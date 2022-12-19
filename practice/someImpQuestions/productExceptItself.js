@@ -19,3 +19,20 @@ function prodcutExceptSelf(nums) {
 
 let nums = [12, 0]
 console.log(prodcutExceptSelf(nums));
+
+
+// second approach
+
+function secondApproach(arr){
+    let n = arr.length;
+    let productOfArr = 1;
+    for(let i = 0; i<n; i++){
+        productOfArr *= arr[i];
+    }
+    let output = [];
+    for(let i = 0; i<n; i++){
+        output.push(productOfArr/arr[i]);
+    }
+    return output;
+}
+console.log(secondApproach([1, 2, 3, 4, 0]));

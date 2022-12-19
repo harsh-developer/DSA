@@ -54,7 +54,6 @@ for(var i = 0; i < vertices.length; i++){
 
 // adding edges
 g.addEdge("A", "B");
-g.addEdge("A", "B");
 g.addEdge("A", "D");
 g.addEdge("B", "D");
 g.addEdge("C", "F")

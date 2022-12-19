@@ -77,6 +77,27 @@ Output: [1,2,2,3,5,6] */
 // // return false;
 
 
-let arr1 = [1,2,3];
-let arr2 = [4,5,6]
-console.log(arr1.concat(arr2));
+// let arr1 = [1,2,3];
+// let arr2 = [4,5,6]
+// console.log(arr1.concat(arr2));
+
+function areRotations(s1, s2)
+    {
+        // code here
+        let map = new Map();
+        for(let i = 0; i< s1.length; i++){
+            map.set(s1[i], map.get(s1[i]) + 1 || 1 )
+        }
+        for(let i =0; i<s2.length; i++){
+            map.set(s2[i], map.get(s2[i]) - 1);
+            if(map.get(s2[i]) == 0){
+                map.delete(s2[i]);
+            }
+        }
+        if(map.size == 0){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+    console.log(areRotations("mightandmagic", "andmagicmigth"))
